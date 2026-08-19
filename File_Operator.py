@@ -175,7 +175,5 @@ class JournalManager:
                 print("\nInvalid option. Please select a valid option from the menu.")
 
 
-# Start the program
-if __name__ == "__main__":
-    journal = JournalManager()
-    journal.run()
+journal = JournalManager()
+journal.run()
