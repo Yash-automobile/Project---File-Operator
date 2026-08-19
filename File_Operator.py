@@ -141,3 +141,41 @@ class JournalManager:
 
             else:
                 print("\nInvalid option. Please select a valid option from the menu.")
+    def run(self):
+        while True:
+            print("\n===================================")
+            print("Welcome to Personal Journal Manager!")
+            print("===================================")
+            print("\nPlease select an option:\n")
+            print("1. Add a New Entry")
+            print("2. View All Entries")
+            print("3. Search for an Entry")
+            print("4. Delete All Entries")
+            print("5. Exit")
+
+            choice = input("\nEnter your choice: ")
+
+            if choice == "1":
+                self.add_entry()
+
+            elif choice == "2":
+                self.view_entries()
+
+            elif choice == "3":
+                self.search_entry()
+
+            elif choice == "4":
+                self.delete_entries()
+
+            elif choice == "5":
+                print("\nThank you for using Personal Journal Manager. Goodbye!")
+                break
+
+            else:
+                print("\nInvalid option. Please select a valid option from the menu.")
+
+
+# Start the program
+if __name__ == "__main__":
+    journal = JournalManager()
+    journal.run()
